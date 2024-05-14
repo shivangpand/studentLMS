@@ -1,4 +1,4 @@
-<?php
+<!-- <?php
 // Database connection
 $servername = "localhost";
 $username = "root";
@@ -34,7 +34,8 @@ if(isset($_POST['register_btn'])) {
         // Admin ID does not exist in the database, display error message
         echo "Admin ID not found!";
     }
+    echo "Registration xx" . $result;
 }
 
 $conn->close();
-?>
+?> -->
