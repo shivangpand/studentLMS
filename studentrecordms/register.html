@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            
+            background-image: url("flat.jpg"); 
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background-color: lightgray;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            display: inline-block; 
+            height: 668px;
+            width:350px;
+        }
+        h2 {
+            text-align: center;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            
+        }
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            height: 800px;;
+            border-radius: 4%;
+            border-color:blue;
+            background-origin: padding-box;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            width: 100%;
+            background-color: #4caf50;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        .new{
+            z-index: 9999;
+            position: fixed;
+            top: 0;
+            left: 0;
+            text-align: center;
+            background-color: purple;
+            color: pink;
+            font-weight: 680;
+            text-align: center; 
+            padding: 15px 0; 
+            margin: 0; 
+          
+            
+            width: 100%;
+           
+            }
+            .panel-heading1{
+            color:white;
+            font-weight:0;
+            padding: 3;
+            text-align: center; 
+    background-color: #337ab7;
+    border-color: #337ab7;
+            margin: 0; 
+            }
+            .btn{
+        background-color: #4CAF50; /* Green */
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 8px;
+    }
+    </style>
+</head>
+<body>
+    
+    <div>
+        <h1 align="center"class="new">Student Record Management System</h1></div>
+        <div class="container">
+           
+        <h2>User Registration Form</h2>
+<!--         
+        <form  action="register1.php" method="post">
+            <div class="panel-heading1">
+                <h3>Sign Up</h3>
+               </div>
+            <label for="username">Fullname:</label>
+            <input type="text"placeholder="Enter Your Name" id="fullname" name="fullname" required><br><br>
+
+            <label for="username">Username:</label>
+            <input type="text"placeholder="Enter Username" id="loginid" name="loginid" required><br><br>
+            
+            <label for="email">Email:</label>
+            <input type="email"placeholder="Enter Email"  id="adminemail" name="adminemail" required><br><br>
+            
+            <label for="password">Password:</label>
+            <input type="password" placeholder="Enter Password" id="password" name="password" required><br><br>
+            
+            <form action="register2.php" method="post">
+                <label for="AdminEmail">Admin ID:</label>
+                <input type="text" id="AdminEmail2" name="AdminEmail2" placeholder="Enter Admin ID" required>
+                <br>
+                <small style="color: red;">* Required</small>
+                <br>
+                <button type="submit" name="register_btn"class="btn" >Register</button>
+    
+        
+     
+            
+
+                        <p>Already have an account? <a href="login.php">Login</a></p>
+                        </form>
+                    
+                    </form>
+          -->
+
+
+                    <form action="register1.php" method="post">
+                        <div class="panel-heading1">
+                            <h3>Sign Up</h3>
+                        </div>
+                        <label for="fullname">Fullname:</label>
+                        <input type="text" placeholder="Enter Your Name" id="fullname" name="fullname" required><br><br>
+                    
+                        <label for="loginid">Username:</label>
+                        <input type="text" placeholder="Enter Username" id="loginid" name="loginid" required><br><br>
+                    
+                        <label for="adminemail">Email:</label>
+                        <input type="email" placeholder="Enter Email" id="adminemail" name="adminemail" required><br><br>
+                    
+                        <label for="password">Password:</label>
+                        <input type="password" placeholder="Enter Password" id="password" name="password" required><br><br>
+                    
+                        <label for="AdminEmail2">Admin ID:</label>
+                        <input type="text" id="AdminEmail2" name="AdminEmail2" placeholder="Enter Admin ID" required>
+                        <br>
+                        <small style="color: red;">* Required</small>
+                        <br>
+                        <button type="submit" name="register_btn" class="btn">Register</button>
+                    </form>
+                    
+                <br>
+                <br>
+        
+           
+    
+
+</div>
+</body>
+</html>
