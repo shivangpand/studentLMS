@@ -7,11 +7,11 @@ if(isset($_POST['submit']))
   {
     $uname=$_POST['id'];
     $Password=$_POST['password'];
-    $query=mysqli_query($con,"select ID,loginid from tbl_login where  loginid='$uname' && password='$Password' ");
+    $query=mysqli_query($con,"select ID,loginid,FullName from tbl_login where  loginid='$uname' && password='$Password' ");
     $ret=mysqli_fetch_array($query);
     if($ret>0){
       $_SESSION['aid']=$ret['ID'];
-      $_SESSION['login']=$ret['loginid'];
+      $_SESSION['login']=$ret['FullName'];
      header('location:dashboard.php');
     }
     else{
